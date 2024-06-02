@@ -1,0 +1,18 @@
+\begin{table*}[h]
+\centering
+\caption{Results from simple synthetic data}
+\label{table1}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrrcccccc}
+\toprule
+ & \multicolumn{3}{c}{Bias} & \multicolumn{3}{c}{RMSE} & \multicolumn{3}{c}{Coverage} & \multicolumn{3}{c}{SE} \\
+Model & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ \\
+\midrule
+LTMLE (GLM) & 0.0052 & 0.0045 & 0.0021 & 0.0202 & 0.0268 & 0.0308 & 0.95 & 0.94 & 0.93 & 0.02 & 0.03 & 0.03 \\
+LTMLE (SL) & 0.0056 & 0.0058 & 0.0061 & 0.0203 & 0.0263 & 0.0311 & 0.91 & 0.93 & 0.91 & 0.02 & 0.02 & 0.03 \\
+DeepACE & 0.0260 & -0.0061 & -0.0976 & 0.1558 & 0.0380 & 0.1232 & 0.46 & 0.93 & 0.30 & 0.06 & 0.04 & 0.04 \\
+Deep LTMLE & 0.0045 & 0.0176 & 0.0257 & 0.0280 & 0.0328 & 0.0710 & 0.82 & 0.87 & 0.73 & 0.02 & 0.03 & 0.04 \\
+Deep LTMLE\dagger & 0.0065 & 0.0068 & 0.0009 & 0.0225 & 0.0295 & 0.0347 & 0.91 & 0.91 & 0.92 & 0.02 & 0.03 & 0.04 \\
+Deep LTMLE\star & 0.0059 & 0.0106 & 0.0036 & 0.0226 & 0.0296 & 0.0360 & 0.91 & 0.92 & 0.90 & 0.02 & 0.03 & 0.04 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

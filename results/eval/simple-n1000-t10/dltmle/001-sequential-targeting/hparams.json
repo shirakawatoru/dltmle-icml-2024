@@ -1,0 +1,15 @@
+{
+    "dim_emb": 16,
+    "dim_emb_time": 4,
+    "dim_emb_type": 4,
+    "dropout": 0.1,
+    "hidden_size": 32,
+    "num_layers": 8,
+    "nhead": 4,
+    "learning_rate": 0.001,
+    "alpha": 0.1,
+    "beta": 0,
+    "max_epochs": 100,
+    "exact_tmle": true,
+    "exact_tmle_common_eps": false
+}

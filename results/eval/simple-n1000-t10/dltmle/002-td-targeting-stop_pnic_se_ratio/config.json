@@ -1,0 +1,10 @@
+{
+    "name": "002-td-targeting-stop_pnic_se_ratio",
+    "label": "dltmle\u2021",
+    "hparams": {
+        "beta": 0,
+        "exact_tmle": false,
+        "exact_tmle_common_eps": true,
+        "stop_pnic_se_ratio": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "001-deepace-targeted",
+    "label": "deepace*",
+    "hparams": {
+        "beta": 0.05,
+        "exact_tmle": true,
+        "exact_tmle_common_eps": false
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "name": "complex-n1000-t30-p5-h5",
+    "data":
+    {
+        "name": "complex",
+        "params": {
+            "n": 1000,
+            "tau": 30,
+            "p": 5,
+            "lag": 30       
+        }
+    },
+    "configurations":
+    {
+        "dltmle":
+        {
+            "model_name": "dltmle",
+            "hparams": {
+                "dim_emb": [16, 32],
+                "dim_emb_time": [4],
+                "dim_emb_type": [4],
+                "dropout": [0, 0.1, 0.2, 0.3],
+                "hidden_size": [16, 32],
+                "num_layers": [4, 8],
+                "nhead": [4, 8],
+                "learning_rate": [1e-3, 5e-4, 1e-4, 5e-5],
+                "alpha": [0.01, 0.05, 0.1],
+                "beta": [0],
+                "max_epochs": [100]
+            }
+        },
+        "deepace":
+        {
+            "model_name": "deepace",
+            "hparams": {
+                "hidden_size": [16, 32],
+                "num_layers": [4, 8],
+                "dropout": [0, 0.1, 0.2, 0.3],
+                "learning_rate": [1e-2, 5e-3, 1e-3, 5e-4],
+                "alpha": [0.01, 0.05, 0.1],
+                "beta": [0.05],
+                "max_epochs": [100]
+            }
+        }
+    },
+    "experiments":
+    {
+        "dltmle": [
+            {
+                "name": "000-plug-in",
+                "label": "dltmle", 
+                "hparams": {
+                    "beta": 0
+                }
+            },
+            {
+                "name": "001-sequential-targeting",
+                "label": "dltmle*",
+                "hparams": {
+                    "beta": 0,
+                    "exact_tmle": true,
+                    "exact_tmle_common_eps": false
+                }
+            },
+            {
+                "name": "002-td-targeting",
+                "label": "dltmle†",
+                "hparams": {
+                    "beta": 0,
+                    "exact_tmle": false,
+                    "exact_tmle_common_eps": true
+                }
+            },
+            {
+                "name": "002-td-targeting-stop_pnic_se_ratio",
+                "label": "dltmle‡",
+                "hparams": {
+                    "beta": 0,
+                    "exact_tmle": false,
+                    "exact_tmle_common_eps": true,
+                    "stop_pnic_se_ratio": true
+                }
+            }
+        ],
+        "deepace": [
+            {
+                "name": "000-deepace",
+                "label": "deepace", 
+                "hparams": {
+                    "beta": 0.05
+                }
+            },
+            {
+                "name": "001-deepace-targeted",
+                "label": "deepace*",
+                "hparams": {
+                    "beta": 0.05,
+                    "exact_tmle": true,
+                    "exact_tmle_common_eps": false
+                }
+            }
+        ]
+    }
+}

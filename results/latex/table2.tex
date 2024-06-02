@@ -1,0 +1,18 @@
+\begin{table*}[h]
+\centering
+\caption{Results from complex synthetic data}
+\label{table2}
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrrrcccccc}
+\toprule
+ & \multicolumn{3}{c}{Bias} & \multicolumn{3}{c}{RMSE} & \multicolumn{3}{c}{Coverage} & \multicolumn{3}{c}{SE} \\
+Model & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ & $\tau = 10$ & $\tau = 20$ & $\tau = 30$ \\
+\midrule
+LTMLE (GLM) & 0.0230 & 0.0766 & 0.1344 & 0.0265 & 0.0796 & 0.1381 & 1.00 & 1.00 & 1.00 & 0.43 & 0.69 & 0.76 \\
+LTMLE (SL) & 0.0144 & 0.0297 & 0.0477 & 0.0185 & 0.0344 & 0.0545 & 1.00 & 1.00 & 1.00 & 0.31 & 0.40 & 0.45 \\
+DeepACE & 0.0055 & -0.0211 & -0.0714 & 0.0397 & 0.0672 & 0.0962 & 1.00 & 1.00 & 1.00 & 0.69 & 0.76 & 0.73 \\
+Deep LTMLE & 0.0181 & 0.0292 & 0.0503 & 0.0263 & 0.0332 & 0.0533 & 0.99 & 0.96 & 0.75 & 0.17 & 0.10 & 0.06 \\
+Deep LTMLE$\dagger$ & 0.0319 & 0.0327 & 0.0535 & 0.0571 & 0.0379 & 0.0571 & 0.99 & 0.97 & 0.78 & 0.19 & 0.10 & 0.07 \\
+Deep LTMLE$\star$ & 0.0156 & 0.0307 & 0.0496 & 0.0218 & 0.0344 & 0.0541 & 0.99 & 0.95 & 0.78 & 0.17 & 0.09 & 0.07 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

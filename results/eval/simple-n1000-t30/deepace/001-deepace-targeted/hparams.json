@@ -1,0 +1,11 @@
+{
+    "hidden_size": 32,
+    "num_layers": 4,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "alpha": 0.05,
+    "beta": 0.05,
+    "max_epochs": 100,
+    "exact_tmle": true,
+    "exact_tmle_common_eps": false
+}

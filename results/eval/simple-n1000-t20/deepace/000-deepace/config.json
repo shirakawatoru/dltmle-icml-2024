@@ -1,0 +1,7 @@
+{
+    "name": "000-deepace",
+    "label": "deepace",
+    "hparams": {
+        "beta": 0.05
+    }
+}
