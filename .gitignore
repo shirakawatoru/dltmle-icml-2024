@@ -4,7 +4,6 @@
 .vscode
 .ipynb_checkpoints
 
-data
 docs
 __pycache__
 lightning_logs
