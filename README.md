@@ -6,6 +6,7 @@
 Toru Shirakawa, Yi Li, Yulun Wu, Sky Qiu, Yuxuan Li, Mingduo Zhao, Hiroyasu Iso, Mark van der Laan
 
 **[Paper](https://arxiv.org/abs/2404.04399)**
+**[Package](https://github.com/shirakawatoru/dltmle)**
 
 Deep LTMLE estimates the mean counterfactual outcome under a dynamic treatment policy and its confidence interval using the iterated conditional expectation (ICE) with targeting 🎯
 
